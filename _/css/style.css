@@ -57,27 +57,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block; }
 
 /* line 4, ../components/sass/_base.scss */
-body {
-  background: #819090;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.2rem;
-  line-height: 150%; }
+a {
+  color: #117;
+  text-decoration: none; }
 
-/* line 11, ../components/sass/_base.scss */
+/* line 12, ../components/sass/_base.scss */
+body {
+  background: #000;
+  color: #fff;
+  margin: 0 0 0 24pt;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20pt; }
+
+/* line 20, ../components/sass/_base.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* Link Styling */
-/* line 17, ../components/sass/_base.scss */
+/* line 26, ../components/sass/_base.scss */
 a:link {
   text-decoration: none;
-  color: #991f1f; }
-/* line 21, ../components/sass/_base.scss */
+  color: #111177; }
+/* line 30, ../components/sass/_base.scss */
 a:hover, a:active {
   text-decoration: underline; }
-/* line 24, ../components/sass/_base.scss */
+/* line 33, ../components/sass/_base.scss */
 a:focus {
   outline: none; }
-/* line 27, ../components/sass/_base.scss */
+/* line 36, ../components/sass/_base.scss */
 a:visited {
-  color: #873131; }
+  color: #1f1f69; }

@@ -1,11 +1,20 @@
+body {
+ 
+}
+a {
+ color: #117;
+ text-decoration: none;
+}
+
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic");
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 body {
-	background: $lightgreen;
-	font-family: $font-sans;
-	font-size: 1.2rem;
-	line-height: 150%
+	background: #000;
+ 	color: #fff;
+ 	margin: 0 0 0 24pt;
+ 	font-family: $font-sans;
+ 	font-size: 20pt;
 }
 
 #{headings()} {
@@ -16,7 +25,7 @@ body {
 a {
 	&:link {
 		text-decoration: none;
-		color: $baseRed;
+		color: $baseColor;
 	}
 	&:hover, &:active {
 		text-decoration:underline;
@@ -25,6 +34,6 @@ a {
 		outline: none;
 	}
 	&:visited {
-		color: desaturate($baseRed, 20%);
+		color: desaturate($baseColor, 20%);
 	}
 }
