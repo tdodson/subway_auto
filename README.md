@@ -5,8 +5,6 @@ subwayauto
 
 Instructions for setting up prerequisites to use this workflow (from Terminal on a Mac):
 
-
-
 Setup Node.js
 If necessary, go to http://nodejs.org/ and install node.js
 command "node -v" to see if it is installed (also includes npm, a package manager)

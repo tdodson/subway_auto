@@ -1,3 +1,4 @@
+// Campana Code
 var t=0;
 var linenumber = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "29", "30", "31", "32", "33"];
 var door = ["The doors are ", "The windows are ", "The ceiling is ", "The train is ", "The subway is ", "The line is ", "The crowds are ", "The tunnel is ", "The stationmaster is ", "The track is ", "The last train is ", "The rapid train is ", "The express train is ", "The local train is "];
@@ -32,3 +33,9 @@ function produce_stories() {
 }
 
 window.onload = produce_stories();
+// End Campana Code
+
+// Voice Code
+var utterance = new SpeechSynthesisUtterance('Hello Treehouse');
+window.speechSynthesis.speak(utterance);
+// End Voice
