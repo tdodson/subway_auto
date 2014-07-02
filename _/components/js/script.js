@@ -28,7 +28,7 @@ function story() {
 }
 function produce_stories() {
  story();
- setInterval(story, 2000);
+ setInterval(story, 5000);
 }
 
 window.onload = produce_stories();
