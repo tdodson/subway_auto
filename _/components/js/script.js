@@ -36,6 +36,24 @@ window.onload = produce_stories();
 // End Campana Code
 
 // Voice Code
-var utterance = new SpeechSynthesisUtterance('Hello Treehouse');
-window.speechSynthesis.speak(utterance);
+var msg = new SpeechSynthesisUtterance();
+var voices = window.speechSynthesis.getVoices();
+msg.voice = voices.filter(function(voice) { return voice.name == 'Google 日本人'; })[0];
+msg.voiceURI = "Google 日本人";
+msg.volume = 1; // 0 to 1
+msg.rate = 1.2; // 0.1 to 10
+msg.pitch = 1; //0 to 2
+msg.text = 'Hello World';
+msg.lang = 'ja-JP';
+
+speechSynthesis.speak(msg);
+
+
+// Voices: http://stackoverflow.com/questions/17224540/web-speech-api-speech-synthesis-getting-voice-list
+// Japanese Voice Code
+// voiceURI= "Google 日本人";
+// msg.lang = "ja-JP";
+
+
+
 // End Voice
