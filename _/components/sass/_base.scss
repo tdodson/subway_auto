@@ -1,20 +1,12 @@
-body {
- 
-}
-a {
- color: #117;
- text-decoration: none;
-}
-
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic");
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
 body {
-	background: #000;
- 	color: #fff;
- 	margin: 0 0 0 24pt;
+ 	color: #121e41;
+ 	font-weight: 700;
+ 	margin: 0;
  	font-family: $font-sans;
- 	font-size: 20pt;
+ 	font-size: 1.4rem;
 }
 
 #{headings()} {

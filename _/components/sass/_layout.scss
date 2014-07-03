@@ -1,0 +1,55 @@
+#main {
+    position: absolute;
+    top: 0;
+    margin: 0 0 0 24pt;
+    // background-color: $opac_black;
+}
+
+.hero #subway {
+    width: 100%;
+    height: 5000px;
+    display: inline-block;
+    vertical-align: top;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat:repeat-y;
+}
+.hero #subway .inner {
+    padding-top: 63.35%; /* height/width of image */
+    display: block;
+    height: 0;
+}
+
+/* default screen, non-retina */
+.hero #subway { background-image: url("../images/subway_1940.jpg"); }
+
+@media only screen and (max-width: 320px) {
+    /* Small screen, non-retina */
+    .hero #cafe { background-image: url("../img/subway_320.jpg"); }
+}
+@media
+only screen and (min-resolution: 2dppx) and (max-width: 320px) {
+    /* Small screen, retina */
+    .hero #cafe { background-image: url("../img/subway_320.jpg"); }
+}
+@media only screen and (min-width: 321px) and (max-width: 538px) {
+    /* Medium screen, non-retina */
+    .hero #cafe { background-image: url("../img/subway_538.jpg"); }
+}
+@media
+only screen and (min-resolution: 2dppx) and (min-width: 321px) and (max-width: 538px) {
+    /* Medium screen, retina */
+    .hero #cafe { background-image: url("../img/subway_538.jpg"); }
+}
+@media
+only screen and (min-resolution: 2dppx) and (min-width: 539px) {
+    /* Large screen, retina */
+    .hero #cafe { background-image: url("../img/subway_538.jpg"); }
+}
+
+
+
+

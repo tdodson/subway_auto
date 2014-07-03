@@ -1,3 +1,18 @@
+
+// Voice Code
+var msg = new SpeechSynthesisUtterance();
+var voices = window.speechSynthesis.getVoices();
+msg.voice = voices.filter(function(voice) { return voice.name == 'Google 日本人'; })[0];
+msg.voiceURI = "Google 日本人";
+msg.volume = 1; // 0 to 1
+msg.rate = 1; // 0.1 to 10
+msg.pitch = 1; //0 to 2
+msg.text = 'Hello World';
+msg.lang = 'en-US';
+
+function talk() {
+	speechSynthesis.speak(msg);
+}
 // Campana Code
 var t=0;
 var linenumber = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "29", "30", "31", "32", "33"];
@@ -26,27 +41,18 @@ function story() {
 
  last.appendChild(document.createTextNode(lede));
  main.appendChild(last);
+ msg.text = lede;
+ speechSynthesis.speak(msg);
 }
 function produce_stories() {
  story();
- setInterval(story, 5000);
+ setInterval(story, 8000);
 }
 
 window.onload = produce_stories();
 // End Campana Code
 
-// Voice Code
-var msg = new SpeechSynthesisUtterance();
-var voices = window.speechSynthesis.getVoices();
-msg.voice = voices.filter(function(voice) { return voice.name == 'Google 日本人'; })[0];
-msg.voiceURI = "Google 日本人";
-msg.volume = 1; // 0 to 1
-msg.rate = 1.2; // 0.1 to 10
-msg.pitch = 1; //0 to 2
-msg.text = 'Hello World';
-msg.lang = 'ja-JP';
 
-speechSynthesis.speak(msg);
 
 
 // Voices: http://stackoverflow.com/questions/17224540/web-speech-api-speech-synthesis-getting-voice-list
