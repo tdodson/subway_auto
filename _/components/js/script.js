@@ -1,15 +1,16 @@
-
 // Voice Code
-var msg = new SpeechSynthesisUtterance();
-var voices = window.speechSynthesis.getVoices();
-msg.voice = voices.filter(function(voice) { return voice.name == 'Google 日本人'; })[0];
-msg.voiceURI = "Google 日本人";
-msg.volume = 1; // 0 to 1
-msg.rate = 1; // 0.1 to 10
-msg.pitch = 1; //0 to 2
-msg.text = 'Hello World';
-// msg.lang = 'en-US';
-msg.lang = 'ja-JP';
+if ('speechSynthesis' in window) {
+	var msg = new SpeechSynthesisUtterance();
+	var voices = window.speechSynthesis.getVoices();
+	msg.voice = voices.filter(function(voice) { return voice.name == 'Google 日本人'; })[0];
+	msg.voiceURI = "Google 日本人";
+	msg.volume = 1; // 0 to 1
+	msg.rate = 1; // 0.1 to 10
+	msg.pitch = 1; //0 to 2
+	msg.text = 'Hello World';
+	// msg.lang = 'en-US';
+	msg.lang = 'ja-JP';
+}
 
 
 function talk() {
@@ -64,15 +65,17 @@ function story() {
 
  main.appendChild(last);
 
- 	/*
-	// English Speech
-	msg.text = ut_en;
-	*/
+	if ('speechSynthesis' in window) {
+	 	/*
+		// English Speech
+		msg.text = ut_en;
+		*/
 
-	// Japanese Speech
-	msg.text = ut_ja;
+		// Japanese Speech
+		msg.text = ut_ja;
 
- speechSynthesis.speak(msg);
+	 speechSynthesis.speak(msg);
+	}
 }
 function produce_stories() {
  story();

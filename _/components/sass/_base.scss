@@ -1,6 +1,11 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic");
 @import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
 
+@font-face {
+    font-family: Collator;
+    src: url(../../fonts/Collator.otf);
+} 
+
 body {
  	color: #121e41;
  	font-weight: 700;
