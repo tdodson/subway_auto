@@ -24,14 +24,14 @@ var linenumber = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12",
 /*
 // English
 var door = ["The doors are ", "The windows are ", "The ceiling is ", "The train is ", "The subway is ", "The line is ", "The crowds are ", "The tunnel is ", "The stationmaster is ", "The track is ", "The last train is ", "The rapid train is ", "The express train is ", "The local train is "];
-var verb = ["closing", "opening", "moving", "beginning", "gathering", "hurting", "laughing", "getting cold", "awakening", "visible", "blooming", "falling", "floating", "speaking", "breaking", "listening", "watching", "arriving"];
+var verb = ["closing", "opening", "moving", "beginning", "gathering", "hurting", "laughing", "getting cold", "awakening", "visible", "blooming", "falling", "floating", "speaking", "coming to a stop", "passing through", "departing", "breaking", "listening", "watching", "arriving"];
 var order = ["restrain yourself", "answer", "forgive us", "contact us", "accept this", "explain", "investigate", "prepare yourself", "beware", "question this", "instruct us", "take care of yourself", "confirm", "listen", "participate", "be calm", "cooperate", "understand", "use freely", "get ready", "give it back", "give us some time", "relax", "enter"];
 // End English
 */
 
 // Japanese
 var door = ["ドア", "窓", "天井", "床", "電車", "地下鉄", "ホーム", "群衆", "トンネル", "駅長", "線路", "再終電車", "特急", "快速", "各駅停車"];
-var verb = ["閉まります", "開きます", "動きます", "始まります", "集まります", "痛みます", "笑います", "冷めます", "起きます", "見えます", "咲きます", "倒れます", "浮かびます", "話せます", "壊れます", "聞いています", "見ています", "参ります"];
+var verb = ["閉まります", "開きます", "動きます", "始まります", "集まります", "痛みます", "笑います", "冷めます", "起きます", "見えます", "咲きます", "倒れます", "浮かびます", "話せます", "壊れます", "聞いています", "見ています", "参ります", "止まります", "通過します", "出発します"];
 var order = ["遠慮", "返事", "容赦", "連絡", "笑納", "説明", "検討", "用意", "用心", "質問", "教授", "自愛", "確認", "静聴", "出席", "安心", "査収", "同伴", "理解", "期待", "利用", "準備", "返却", "強力", "猶予", "放念", "入場"];
 // End Japanese
 
@@ -53,7 +53,7 @@ function fresh(array) {
 
 
 function story() {
- // If "t" is less than or equal to twelve, increment it. If it is 13 or greater, remove the first child of 'main'	
+ // If "t" is less than or equal to twelve, increment it. If it is 13 or greater, stop incrementing and remove the first child of 'main.'	
  var main=document.getElementById('main');
  if (t<=12) {
   t+=1;
