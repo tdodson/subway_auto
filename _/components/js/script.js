@@ -80,8 +80,9 @@ function story() {
 		msg.text = ut;
 		var voices = window.speechSynthesis.getVoices();
 		if (language == "English") {
-			msg.voice = voices.filter(function(voice) { return voice.name == "Google UK English Female"; })[0];
-			msg.voiceURI = "Google UK English Female";
+			msg.lang = "en_US";
+			// msg.voice = voices.filter(function(voice) { return voice.name == "Google UK English Male"; })[0];
+			// msg.voiceURI = "Google UK English Male";	
 		} else {
 			msg.voice = voices.filter(function(voice) { return voice.name == "Google 日本人"; })[0];
 			msg.voiceURI = "Google 日本人";
