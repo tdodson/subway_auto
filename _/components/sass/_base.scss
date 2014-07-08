@@ -7,22 +7,47 @@
 } 
 
 body {
- 	color: #121e41;
- 	font-weight: 700;
+ 	color: $blue;
  	margin: 0;
  	font-family: $font-sans;
- 	font-size: 1.4rem;
+ 	font-size: 100%;
 }
 
-#{headings()} {
-	font-family: $font-sans;
+#title {
+	text-align: center;
+	margin-top: 2.5em;
+	font-size: 3em;
+}
+
+p#auto_text {
+	text-transform: uppercase;
+}
+
+#main {
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+#main ul {
+	font-size: 0.5em;
+}
+
+#main ul li {
+	display: inline;
+	padding-right: 5px;
+}
+
+
+
+.pointer {
+	cursor: pointer;
 }
 
 /* Link Styling */
 a {
 	&:link {
 		text-decoration: none;
-		color: $baseColor;
+		color: $blue;
 	}
 	&:hover, &:active {
 		text-decoration:underline;
@@ -31,6 +56,6 @@ a {
 		outline: none;
 	}
 	&:visited {
-		color: desaturate($baseColor, 20%);
+		color: desaturate($blue, 20%);
 	}
 }

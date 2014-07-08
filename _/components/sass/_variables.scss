@@ -1,4 +1,13 @@
-$opac_black: rgba(0,0,0,0.8);
-$baseColor: #117;
+// Media Queries
+$break_small: 320px;
+$break_medium: 768px;
+$break_large: 1280px; 
+
+// Colors
+$opac_black: rgba(0,0,0,0.3);
+$blue: #111177;
+$black: #000;
+
+// Fonts
 $font-serif: Georgia, "Chaparral Pro", "Times New Roman", Times, serif;
 $font-sans: "Collator", "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
