@@ -67,7 +67,7 @@ function story() {
 
  // If "i" is less than or equal to twelve, increment it. If it is 13 or greater, stop incrementing and remove the first child of 'main.'	
  var main = document.getElementById('main');
- if (i <= 12) {
+ if (i <= 9) {
   i += 1;
  } else {
   main.removeChild(document.getElementById('main').firstChild);
@@ -109,4 +109,4 @@ function produce_stories() {
 }
 
 // Runs produce_stories() on page load.
-window.onload = produce_stories();
+// window.onload = produce_stories();

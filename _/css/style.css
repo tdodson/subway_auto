@@ -70,8 +70,8 @@ body {
 /* line 16, ../components/sass/_base.scss */
 #title {
   text-align: center;
-  margin-top: 2.5em;
-  font-size: 3em; }
+  margin-top: 2.8em;
+  font-size: 2em; }
 
 /* line 22, ../components/sass/_base.scss */
 p#auto_text {
@@ -83,13 +83,15 @@ p#auto_text {
   font-weight: 700; }
 
 /* line 31, ../components/sass/_base.scss */
-#main ul {
-  font-size: 0.5em; }
+.controls ul {
+  font-size: 0.95em;
+  margin: 0 0 0 50px; }
 
-/* line 35, ../components/sass/_base.scss */
-#main ul li {
+/* line 36, ../components/sass/_base.scss */
+.controls ul li {
   display: inline;
-  padding-right: 5px; }
+  padding-right: 20px;
+  padding-top: 50px; }
 
 /* line 42, ../components/sass/_base.scss */
 .pointer {
@@ -99,7 +101,7 @@ p#auto_text {
 /* line 48, ../components/sass/_base.scss */
 a:link {
   text-decoration: none;
-  color: #111177; }
+  color: #FFF; }
 /* line 52, ../components/sass/_base.scss */
 a:hover, a:active {
   text-decoration: underline; }
@@ -108,12 +110,12 @@ a:focus {
   outline: none; }
 /* line 58, ../components/sass/_base.scss */
 a:visited {
-  color: #1f1f69; }
+  color: white; }
 
 /* line 1, ../components/sass/_layout.scss */
 header {
   background-color: rgba(0, 0, 0, 0.3);
-  width: 100%;
+  width: auto;
   height: 20px;
   padding: 10px;
   color: #FFF; }
@@ -138,8 +140,8 @@ video {
 
 /* line 31, ../components/sass/_layout.scss */
 .overlay {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -156,47 +158,75 @@ video {
   margin: 0 auto;
   color: #fff;
   font-family: inherit;
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
 
 /* line 53, ../components/sass/_layout.scss */
+span.dash-bottom {
+  height: 610px;
+  width: 4px;
+  border-right: 4px dashed #fdfdfe;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -2px; }
+
+/* line 64, ../components/sass/_layout.scss */
 #expo {
-  height: 450px;
-  background: #111177; }
+  height: 270px;
+  font-size: 1em;
+  line-height: 150%;
+  padding: 40px 25% 65px 25%;
+  background: #bdce64; }
 
-/* line 58, ../components/sass/_layout.scss */
+/* line 72, ../components/sass/_layout.scss */
+#expo article {
+  width: 650px; }
+
+/* line 76, ../components/sass/_layout.scss */
+#expo p {
+  padding-bottom: 1.25em; }
+
+/* line 80, ../components/sass/_layout.scss */
+.controls {
+  background-color: #111177;
+  width: auto;
+  height: 27px;
+  padding: 15px 0 0 0;
+  color: #FFF; }
+
+/* line 89, ../components/sass/_layout.scss */
 #poem {
-  height: 450px; }
+  height: 650px; }
 
-/* line 62, ../components/sass/_layout.scss */
+/* line 93, ../components/sass/_layout.scss */
 #main {
-  margin-top: -600px; }
+  padding-left: 50px; }
 
-/* line 66, ../components/sass/_layout.scss */
+/* line 97, ../components/sass/_layout.scss */
 .hero #subway {
   width: 100%;
-  display: inline-block;
-  vertical-align: top;
-  font: 0/0 serif;
-  text-shadow: none;
-  color: transparent;
-  background-size: 100%;
-  background-position: 50% 50%;
-  background-repeat: repeat-y; }
+  background-repeat: no-repeat; }
 
-/* line 77, ../components/sass/_layout.scss */
+/* .hero #subway {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    font: 0/0 serif;
+    text-shadow: none;
+    color: transparent;
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
 .hero #subway .inner {
-  padding-top: 63.35%;
-  /* height/width of image */
-  display: block;
-  height: 0; }
-
-/* default screen, non-retina */
-/* line 84, ../components/sass/_layout.scss */
-.hero #subway {
-  background-image: url("../images/subway_1940.jpg"); }
-
-@media only screen and (max-width: 320px) {
-  /* Small screen, non-retina */
-  /* line 88, ../components/sass/_layout.scss */
-  .hero #cafe {
-    background-image: url("../img/subway_320.jpg"); } }
+    padding-top: 50%; 
+    display: block;
+    height: 0;
+}
+*/
+/* 1280 X 1024 */
+/* line 121, ../components/sass/_layout.scss */
+#poem {
+  background-image: url("http://placehold.it/1280x650");
+  height: 650px; }

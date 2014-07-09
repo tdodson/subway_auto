@@ -1,12 +1,13 @@
 // Media Queries
 $break_small: 320px;
 $break_medium: 768px;
-$break_large: 1280px; 
-
+$break_large: 970px; // poem lines begin to break, expo text covered up.
+$break_giant: 1281px; // need a bigger background image beyond 1280
 // Colors
 $opac_black: rgba(0,0,0,0.3);
 $blue: #111177;
 $black: #000;
+$green: #bdce64;
 
 // Fonts
 $font-serif: Georgia, "Chaparral Pro", "Times New Roman", Times, serif;

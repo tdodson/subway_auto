@@ -1,6 +1,6 @@
 header {
     background-color: $opac_black;
-    width: 100%;
+    width: auto;
     height: 20px;
     padding: 10px;
     color: #FFF;
@@ -29,8 +29,8 @@ video {
 }
 
 .overlay {
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -47,23 +47,59 @@ video {
   margin: 0 auto;
   color: #fff;
   font-family: inherit;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+span.dash-bottom {
+  height: 610px;
+  width: 4px;
+  border-right: 4px dashed #fdfdfe;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -2px;
 }
 
 #expo {
-    height: 450px;
-    background: $blue;
+  height: 270px;
+  font-size: 1em;
+  line-height: 150%;
+  padding: 40px 25% 65px 25%;
+  background: $green;
 }
 
+#expo article {
+  width: 650px;
+}
+
+#expo p {
+  padding-bottom: 1.25em;
+}
+
+.controls {
+  background-color: $blue;
+  width: auto;
+  height: 27px;
+  padding: 15px 0 0 0;
+  color: #FFF;
+}
+
+
 #poem {
-    height: 450px;
+    height: 650px;
 }
 
 #main {
-    margin-top: -600px;
+    padding-left: 50px;
 }
 
 .hero #subway {
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+/* .hero #subway {
     width: 100%;
     display: inline-block;
     vertical-align: top;
@@ -72,18 +108,18 @@ video {
     color: transparent;
     background-size: 100%;
     background-position: 50% 50%;
-    background-repeat:repeat-y;
+    background-repeat: no-repeat;
 }
 .hero #subway .inner {
-    padding-top: 63.35%; /* height/width of image */
+    padding-top: 50%; 
     display: block;
     height: 0;
 }
+*/
 
-/* default screen, non-retina */
-.hero #subway { background-image: url("../images/subway_1940.jpg"); }
-
-@media only screen and (max-width: 320px) {
-    /* Small screen, non-retina */
-    .hero #cafe { background-image: url("../img/subway_320.jpg"); }
+/* 1280 X 1024 */
+#poem { 
+   //  background-image: url("../images/subway_1280.jpg"); 
+   background-image: url("http://placehold.it/1280x650");
+   height: 650px;
 }
