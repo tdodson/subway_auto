@@ -1,3 +1,117 @@
+// Media Queries
+
+// phone or small device
+@media screen 
+and (max-width: $break_tiny) {
+   #expo {
+    padding: 40px 10% 65px 10%;
+    font-size: 1em;
+    height: 525px;
+  }
+  #expo article {
+    width: 300px;
+  }
+   #poem {
+      height: 900px;
+      background-image: url("../images/subway_1280x680.jpg");
+   }
+   #poem div {
+    font-size: 65%;
+    line-height: 130%;
+  }
+}
+
+@media screen 
+and (min-width: $break_tiny +1)
+and (max-width: $break_small) {
+  #expo {
+    padding: 40px 10% 65px 10%;
+    font-size: 1em;
+    height: 295px;
+  }
+  #expo article {
+  width: 650px;
+  }
+  #poem {
+    height: 680px;
+    background-image: url("../images/subway_1280x680.jpg");
+  }
+  #poem div {
+    font-size: 65%;
+    line-height: 130%;
+  }
+}
+
+@media screen 
+and (min-width: $break_small +1)
+and (max-width: $break_medium) {
+   #expo {
+    padding: 40px 10% 65px 10%;
+    height: 295px;
+  }
+  #poem {
+    height: 680px;
+    background-image: url("../images/subway_1280x680.jpg");
+  }
+  #poem div {
+    font-size: 65%;
+    line-height: 130%;
+  }
+}
+
+@media screen 
+and (min-width: $break_medium +1)
+and (max-width: $break_large) {
+  #expo {
+    padding: 40px 10% 65px 10%;
+    height: 295px;
+  }
+
+  #poem {
+    height: 680px;
+    background-image: url("../images/subway_1280x680.jpg");
+  }
+  #poem div {
+    font-size: 80%;
+  }
+}
+
+// default screen, 1280px width
+@media screen 
+and (min-width: $break_large +1)
+and (max-width: $break_giant) {
+  #expo {
+    padding: 40px 25% 65px 25%;
+    height: 295px;
+  }
+  #poem {
+    height: 680px;
+    background-image: url("../images/subway_1280x680.jpg");
+  }
+  #poem div {
+    font-size: 100%;
+  }
+}
+
+// large screen; only need to swap out image for larger to prevent tiling.
+@media screen 
+and (min-width: $break_giant +1)
+{
+  #expo {
+    padding: 40px 25% 65px 25%;
+    height: 295px;
+  }
+  #poem {
+    height: 680px;
+    background-image: url("../images/subway_1280x680.jpg");
+  }
+  #poem div {
+    font-size: 100%;
+  }
+}
+
+
+
 header {
     background-color: $opac_black;
     width: auto;
@@ -62,15 +176,10 @@ span.dash-bottom {
 }
 
 #expo {
-  height: 270px;
   font-size: 1em;
   line-height: 150%;
-  padding: 40px 25% 65px 25%;
+ // padding: 40px 25% 65px 25%;
   background: $green;
-}
-
-#expo article {
-  width: 650px;
 }
 
 #expo p {
@@ -85,11 +194,6 @@ span.dash-bottom {
   color: #FFF;
 }
 
-
-#poem {
-    height: 650px;
-}
-
 #main {
     padding-left: 50px;
 }
@@ -97,29 +201,4 @@ span.dash-bottom {
 .hero #subway {
   width: 100%;
   background-repeat: no-repeat;
-}
-
-/* .hero #subway {
-    width: 100%;
-    display: inline-block;
-    vertical-align: top;
-    font: 0/0 serif;
-    text-shadow: none;
-    color: transparent;
-    background-size: 100%;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-}
-.hero #subway .inner {
-    padding-top: 50%; 
-    display: block;
-    height: 0;
-}
-*/
-
-/* 1280 X 1024 */
-#poem { 
-   //  background-image: url("../images/subway_1280.jpg"); 
-   background-image: url("http://placehold.it/1280x650");
-   height: 650px;
 }
