@@ -13,7 +13,7 @@ and (max-width: $break_tiny) {
   }
    #poem {
       height: 900px;
-      background-image: url("../images/subway_1280x680.jpg");
+      background-image: url("../images/subway_400x900.jpg");
    }
    #poem div {
     font-size: 65%;
@@ -34,7 +34,7 @@ and (max-width: $break_small) {
   }
   #poem {
     height: 680px;
-    background-image: url("../images/subway_1280x680.jpg");
+    background-image: url("../images/subway_645x680.jpg");
   }
   #poem div {
     font-size: 65%;
@@ -69,7 +69,7 @@ and (max-width: $break_large) {
 
   #poem {
     height: 680px;
-    background-image: url("../images/subway_1280x680.jpg");
+    background-image: url("../images/subway_970x680.jpg");
   }
   #poem div {
     font-size: 80%;
@@ -103,7 +103,7 @@ and (min-width: $break_giant +1)
   }
   #poem {
     height: 680px;
-    background-image: url("../images/subway_1280x680.jpg");
+    background-image: url("../images/subway_1680x680.jpg");
   }
   #poem div {
     font-size: 100%;
