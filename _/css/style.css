@@ -112,104 +112,112 @@ a:focus {
 a:visited {
   color: white; }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 630px) {
   /* line 6, ../components/sass/_layout.scss */
   #expo {
-    padding: 40px 10% 65px 10%;
-    font-size: 1em;
-    height: 525px; }
+    padding: 40px 30px 65px 20px;
+    margin-right: -10px;
+    font-size: 0.95em;
+    height: 515px;
+    min-width: 320px; }
 
-  /* line 11, ../components/sass/_layout.scss */
+  /* line 13, ../components/sass/_layout.scss */
   #expo article {
     width: 300px; }
 
-  /* line 14, ../components/sass/_layout.scss */
+  /* line 16, ../components/sass/_layout.scss */
   #poem {
     height: 900px;
+    min-width: 320px;
     background-image: url("../images/subway_400x900.jpg"); }
 
-  /* line 18, ../components/sass/_layout.scss */
+  /* line 21, ../components/sass/_layout.scss */
   #poem div {
-    font-size: 65%;
-    line-height: 130%; } }
-@media screen and (min-width: 401px) and (max-width: 645px) {
-  /* line 27, ../components/sass/_layout.scss */
+    font-size: 60%;
+    line-height: 130%; }
+
+  /* line 25, ../components/sass/_layout.scss */
+  footer {
+    font-size: 0.95em;
+    min-width: 400px; } }
+@media screen and (min-width: 631px) and (max-width: 647px) {
+  /* line 34, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 10% 65px 10%;
     font-size: 1em;
-    height: 295px; }
+    height: 335px; }
 
-  /* line 32, ../components/sass/_layout.scss */
+  /* line 39, ../components/sass/_layout.scss */
   #expo article {
     width: 650px; }
 
-  /* line 35, ../components/sass/_layout.scss */
+  /* line 42, ../components/sass/_layout.scss */
   #poem {
     height: 680px;
     background-image: url("../images/subway_645x680.jpg"); }
 
-  /* line 39, ../components/sass/_layout.scss */
+  /* line 46, ../components/sass/_layout.scss */
   #poem div {
     font-size: 65%;
     line-height: 130%; } }
-@media screen and (min-width: 646px) and (max-width: 768px) {
-  /* line 48, ../components/sass/_layout.scss */
+@media screen and (min-width: 648px) and (max-width: 768px) {
+  /* line 55, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 10% 65px 10%;
-    height: 295px; }
+    height: 335px; }
 
-  /* line 52, ../components/sass/_layout.scss */
+  /* line 59, ../components/sass/_layout.scss */
   #poem {
     height: 680px;
     background-image: url("../images/subway_1280x680.jpg"); }
 
-  /* line 56, ../components/sass/_layout.scss */
+  /* line 63, ../components/sass/_layout.scss */
   #poem div {
     font-size: 65%;
     line-height: 130%; } }
 @media screen and (min-width: 769px) and (max-width: 970px) {
-  /* line 65, ../components/sass/_layout.scss */
+  /* line 72, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 10% 65px 10%;
-    height: 295px; }
+    height: 335px; }
 
-  /* line 70, ../components/sass/_layout.scss */
+  /* line 77, ../components/sass/_layout.scss */
   #poem {
     height: 680px;
     background-image: url("../images/subway_970x680.jpg"); }
 
-  /* line 74, ../components/sass/_layout.scss */
+  /* line 81, ../components/sass/_layout.scss */
   #poem div {
     font-size: 80%; } }
 @media screen and (min-width: 971px) and (max-width: 1280px) {
-  /* line 83, ../components/sass/_layout.scss */
+  /* line 90, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 25% 65px 25%;
-    height: 295px; }
+    height: 330px; }
 
-  /* line 87, ../components/sass/_layout.scss */
+  /* line 94, ../components/sass/_layout.scss */
   #poem {
     height: 680px;
     background-image: url("../images/subway_1280x680.jpg"); }
 
-  /* line 91, ../components/sass/_layout.scss */
+  /* line 98, ../components/sass/_layout.scss */
   #poem div {
     font-size: 100%; } }
 @media screen and (min-width: 1281px) {
-  /* line 100, ../components/sass/_layout.scss */
+  /* line 107, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 25% 65px 25%;
     height: 295px; }
 
-  /* line 104, ../components/sass/_layout.scss */
+  /* line 111, ../components/sass/_layout.scss */
   #poem {
     height: 680px;
     background-image: url("../images/subway_1680x680.jpg"); }
 
-  /* line 108, ../components/sass/_layout.scss */
+  /* line 115, ../components/sass/_layout.scss */
   #poem div {
     font-size: 100%; } }
-/* line 115, ../components/sass/_layout.scss */
+/* line 122, ../components/sass/_layout.scss */
 header {
   background-color: rgba(0, 0, 0, 0.3);
   width: auto;
@@ -217,13 +225,13 @@ header {
   padding: 10px;
   color: #FFF; }
 
-/* line 127, ../components/sass/_layout.scss */
+/* line 134, ../components/sass/_layout.scss */
 #intro {
   text-align: center;
   width: 100%;
   height: 900px; }
 
-/* line 133, ../components/sass/_layout.scss */
+/* line 140, ../components/sass/_layout.scss */
 video {
   position: fixed;
   right: 0;
@@ -235,7 +243,7 @@ video {
   z-index: -100;
   background-size: cover; }
 
-/* line 145, ../components/sass/_layout.scss */
+/* line 152, ../components/sass/_layout.scss */
 .overlay {
   width: 300px;
   height: 300px;
@@ -248,7 +256,7 @@ video {
   top: 20%;
   left: 33%; }
 
-/* line 158, ../components/sass/_layout.scss */
+/* line 165, ../components/sass/_layout.scss */
 .overlay p {
   text-align: center;
   width: 80%;
@@ -257,7 +265,7 @@ video {
   font-family: inherit;
   margin-bottom: 10px; }
 
-/* line 167, ../components/sass/_layout.scss */
+/* line 174, ../components/sass/_layout.scss */
 span.dash-bottom {
   height: 610px;
   width: 4px;
@@ -268,17 +276,16 @@ span.dash-bottom {
   left: 50%;
   margin-left: -2px; }
 
-/* line 178, ../components/sass/_layout.scss */
+/* line 185, ../components/sass/_layout.scss */
 #expo {
-  font-size: 1em;
   line-height: 150%;
   background: #bdce64; }
 
-/* line 185, ../components/sass/_layout.scss */
+/* line 190, ../components/sass/_layout.scss */
 #expo p {
   padding-bottom: 1.25em; }
 
-/* line 189, ../components/sass/_layout.scss */
+/* line 194, ../components/sass/_layout.scss */
 .controls {
   background-color: #111177;
   width: auto;
@@ -286,11 +293,11 @@ span.dash-bottom {
   padding: 15px 0 0 0;
   color: #FFF; }
 
-/* line 197, ../components/sass/_layout.scss */
+/* line 202, ../components/sass/_layout.scss */
 #main {
   padding-left: 50px; }
 
-/* line 201, ../components/sass/_layout.scss */
+/* line 206, ../components/sass/_layout.scss */
 .hero #subway {
   width: 100%;
   background-repeat: no-repeat; }

@@ -4,20 +4,27 @@
 @media screen 
 and (max-width: $break_tiny) {
    #expo {
-    padding: 40px 10% 65px 10%;
-    font-size: 1em;
-    height: 525px;
+    padding: 40px 30px 65px 20px;
+    margin-right: -10px;
+    font-size: 0.95em;
+    height: 515px;
+    min-width: 320px
   }
   #expo article {
     width: 300px;
   }
    #poem {
       height: 900px;
+      min-width: 320px;
       background-image: url("../images/subway_400x900.jpg");
    }
    #poem div {
-    font-size: 65%;
+    font-size: 60%;
     line-height: 130%;
+  }
+  footer {
+    font-size: 0.95em;
+    min-width: 400px;
   }
 }
 
@@ -27,10 +34,10 @@ and (max-width: $break_small) {
   #expo {
     padding: 40px 10% 65px 10%;
     font-size: 1em;
-    height: 295px;
+    height: 335px;
   }
   #expo article {
-  width: 650px;
+    width: 650px;
   }
   #poem {
     height: 680px;
@@ -47,7 +54,7 @@ and (min-width: $break_small +1)
 and (max-width: $break_medium) {
    #expo {
     padding: 40px 10% 65px 10%;
-    height: 295px;
+    height: 335px;
   }
   #poem {
     height: 680px;
@@ -64,7 +71,7 @@ and (min-width: $break_medium +1)
 and (max-width: $break_large) {
   #expo {
     padding: 40px 10% 65px 10%;
-    height: 295px;
+    height: 335px;
   }
 
   #poem {
@@ -82,7 +89,7 @@ and (min-width: $break_large +1)
 and (max-width: $break_giant) {
   #expo {
     padding: 40px 25% 65px 25%;
-    height: 295px;
+    height: 330px;
   }
   #poem {
     height: 680px;
@@ -176,9 +183,7 @@ span.dash-bottom {
 }
 
 #expo {
-  font-size: 1em;
   line-height: 150%;
- // padding: 40px 25% 65px 25%;
   background: $green;
 }
 
