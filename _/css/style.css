@@ -241,9 +241,10 @@ video {
   width: auto;
   height: auto;
   z-index: -100;
+  background: url(_/videos/tokyo_subway.png) no-repeat;
   background-size: cover; }
 
-/* line 152, ../components/sass/_layout.scss */
+/* line 153, ../components/sass/_layout.scss */
 .overlay {
   width: 300px;
   height: 300px;
@@ -256,7 +257,7 @@ video {
   top: 20%;
   left: 33%; }
 
-/* line 165, ../components/sass/_layout.scss */
+/* line 166, ../components/sass/_layout.scss */
 .overlay p {
   text-align: center;
   width: 80%;
@@ -265,7 +266,7 @@ video {
   font-family: inherit;
   margin-bottom: 10px; }
 
-/* line 174, ../components/sass/_layout.scss */
+/* line 175, ../components/sass/_layout.scss */
 span.dash-bottom {
   height: 610px;
   width: 4px;
@@ -276,16 +277,16 @@ span.dash-bottom {
   left: 50%;
   margin-left: -2px; }
 
-/* line 185, ../components/sass/_layout.scss */
+/* line 186, ../components/sass/_layout.scss */
 #expo {
   line-height: 150%;
   background: #bdce64; }
 
-/* line 190, ../components/sass/_layout.scss */
+/* line 191, ../components/sass/_layout.scss */
 #expo p {
   padding-bottom: 1.25em; }
 
-/* line 194, ../components/sass/_layout.scss */
+/* line 195, ../components/sass/_layout.scss */
 .controls {
   background-color: #111177;
   width: auto;
@@ -293,11 +294,11 @@ span.dash-bottom {
   padding: 15px 0 0 0;
   color: #FFF; }
 
-/* line 202, ../components/sass/_layout.scss */
+/* line 203, ../components/sass/_layout.scss */
 #main {
   padding-left: 50px; }
 
-/* line 206, ../components/sass/_layout.scss */
+/* line 207, ../components/sass/_layout.scss */
 .hero #subway {
   width: 100%;
   background-repeat: no-repeat; }
