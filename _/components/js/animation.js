@@ -1,7 +1,7 @@
 $(document).ready(function() {
 	var $window = $(window); // cache window
 	var $video = $('video'); // cache video
-	if ($window.width() < 768) {
+	if ($window.width() < 631) {
 		$video.replaceWith("<div id='mobile_image'>");
 	} // end if statement
 	$('.dash-bottom')
@@ -12,7 +12,7 @@ $(document).ready(function() {
 		.hide()
 		.fadeIn(6000);
 	$(function() {
-			if ($window.width() < 768) {
+			if ($window.width() < 631) { // up to breakpoint where #poem is still 900px height
 				endZone = $('footer').offset().top - $window.height() - 355; // calculate the height of the end zone.
 			} else {
 				endZone = $('footer').offset().top - $window.height() - 10; // calculate the height of the end zone.
