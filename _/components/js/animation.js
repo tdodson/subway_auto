@@ -4,13 +4,16 @@ $(document).ready(function() {
 	if ($window.width() < 631) {
 		$video.replaceWith("<div id='mobile_image'>");
 	} // end if statement
+	
 	$('.dash-bottom')
 		.hide()
 		.delay(8000)
 		.fadeIn(3000);
+	
 	$('.overlay')
 		.hide()
 		.fadeIn(6000);
+	
 	$(function() {
 			if ($window.width() < 631) { // up to breakpoint where #poem is still 900px height
 				endZone = $('footer').offset().top - $window.height() - 355; // calculate the height of the end zone.
@@ -25,7 +28,17 @@ $(document).ready(function() {
 			} // end if statement
 		}); // end anonymous window.on function
 	}); // end scroll triggers action function
+	
 	$("a.no_default").click(function(event) {
 			event.preventDefault(); // prevents links of class "no_default" from behaving like links so that they may be used as even triggers for other actions (e.g., language change)
 	}); // end preventDefault function
+	
+	$('a.people').on('click', function() {
+		$('section#people').toggle();
+	}); // end a.people function
+	
+	$('a.code').on('click', function() {
+		$('section#code').toggle();
+	}); // end a.code function
+
 }); // end document.ready
