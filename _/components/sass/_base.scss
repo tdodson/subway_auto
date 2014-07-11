@@ -59,3 +59,14 @@ a {
 		color: #FFF;
 	}
 }
+
+.ui-dialog-titlebar {
+}
+
+.ui-dialog-content p {
+	font-size: 0.85em;
+	font-family: $font-sans;
+	line-spacing: 150% !important;
+	padding-bottom: 1.25em;
+}
+

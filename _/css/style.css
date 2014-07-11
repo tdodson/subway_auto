@@ -112,6 +112,13 @@ a:focus {
 a:visited {
   color: #FFF; }
 
+/* line 66, ../components/sass/_base.scss */
+.ui-dialog-content p {
+  font-size: 0.85em;
+  font-family: "Collator", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-spacing: 150% !important;
+  padding-bottom: 1.25em; }
+
 @media screen and (max-width: 630px) {
   /* line 6, ../components/sass/_layout.scss */
   #mobile_image {

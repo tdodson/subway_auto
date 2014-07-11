@@ -34,11 +34,23 @@ $(document).ready(function() {
 	}); // end preventDefault function
 	
 	$('a.people').on('click', function() {
-		$('section#people').dialog();
+		$('section#people').dialog({
+			title: "People",
+			height: 450,
+			width: 320,
+			show: {effect: "fadeIn", duration: 2000},
+      hide: "fade"
+		}); // end .dialog function
 	}); // end a.people function
 	
 	$('a.code').on('click', function() {
-		$('section#code').dialog();
+		$('section#code').dialog({
+			title: "Code",
+			height: 450,
+			width: 320,
+			show: {effect: "fadeIn", duration: 2000},
+      hide: "fade"
+		}); // end .dialog function
 	}); // end a.code function
 
 }); // end document.ready
