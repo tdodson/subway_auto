@@ -3,6 +3,9 @@
 // phone or small device
 @media screen 
 and (max-width: $break_tiny) {
+   span.dash-bottom {
+      height: 640px;
+   }
    #expo {
     padding: 40px 30px 65px 20px;
     margin-right: -10px;
@@ -31,6 +34,9 @@ and (max-width: $break_tiny) {
 @media screen 
 and (min-width: $break_tiny +1)
 and (max-width: $break_small) {
+  span.dash-bottom {
+      height: 640px;
+   }
   #expo {
     padding: 40px 10% 65px 10%;
     font-size: 1em;
@@ -52,6 +58,9 @@ and (max-width: $break_small) {
 @media screen 
 and (min-width: $break_small +1)
 and (max-width: $break_medium) {
+  span.dash-bottom {
+      height: 610px;
+   }
    #expo {
     padding: 40px 10% 65px 10%;
     height: 335px;
@@ -69,6 +78,9 @@ and (max-width: $break_medium) {
 @media screen 
 and (min-width: $break_medium +1)
 and (max-width: $break_large) {
+  span.dash-bottom {
+      height: 610px;
+   }
   #expo {
     padding: 40px 10% 65px 10%;
     height: 335px;
@@ -87,6 +99,9 @@ and (max-width: $break_large) {
 @media screen 
 and (min-width: $break_large +1)
 and (max-width: $break_giant) {
+  span.dash-bottom {
+      height: 610px;
+   }
   #expo {
     padding: 40px 25% 65px 25%;
     height: 330px;
@@ -104,6 +119,9 @@ and (max-width: $break_giant) {
 @media screen 
 and (min-width: $break_giant +1)
 {
+  span.dash-bottom {
+      height: 610px;
+   }
   #expo {
     padding: 40px 25% 65px 25%;
     height: 295px;
@@ -116,8 +134,7 @@ and (min-width: $break_giant +1)
     font-size: 100%;
   }
 }
-
-
+// End Media Queries
 
 header {
     background-color: $opac_black;
@@ -146,8 +163,13 @@ video {
     width: auto;
     height: auto;
     z-index: -100;
-    background: url(_/videos/tokyo_subway.png) no-repeat;
+    background: url("../videos/tokyo_subway.png") no-repeat;
     background-size: cover;
+}
+
+#mobile_image {
+  background-image: url("../videos/tokyo_subway_900.png");
+  height: 100%;
 }
 
 .overlay {
@@ -173,7 +195,6 @@ video {
 }
 
 span.dash-bottom {
-  height: 610px;
   width: 4px;
   border-right: 4px dashed #fdfdfe;
   display: block;
