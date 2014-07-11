@@ -119,10 +119,20 @@ a:visited {
     height: 100%; }
 
   /* line 10, ../components/sass/_layout.scss */
+  .overlay {
+    left: 14%;
+    width: 250px;
+    height: 250px; }
+
+  /* line 15, ../components/sass/_layout.scss */
+  .overlay p {
+    margin: 0 auto 10px 17px; }
+
+  /* line 18, ../components/sass/_layout.scss */
   span.dash-bottom {
     height: 640px; }
 
-  /* line 13, ../components/sass/_layout.scss */
+  /* line 21, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 30px 65px 20px;
     margin-right: -10px;
@@ -130,134 +140,184 @@ a:visited {
     height: 515px;
     min-width: 320px; }
 
-  /* line 20, ../components/sass/_layout.scss */
+  /* line 28, ../components/sass/_layout.scss */
   #expo article {
     width: 300px; }
 
-  /* line 23, ../components/sass/_layout.scss */
+  /* line 31, ../components/sass/_layout.scss */
   #poem {
     height: 900px;
     min-width: 320px;
     background-image: url("../images/subway_630x900.jpg"); }
 
-  /* line 28, ../components/sass/_layout.scss */
+  /* line 36, ../components/sass/_layout.scss */
   #poem div {
     font-size: 60%;
     line-height: 130%; }
 
-  /* line 32, ../components/sass/_layout.scss */
+  /* line 40, ../components/sass/_layout.scss */
   footer {
     font-size: 0.95em;
     min-width: 400px; } }
 @media screen and (min-width: 631px) and (max-width: 647px) {
-  /* line 41, ../components/sass/_layout.scss */
+  /* line 49, ../components/sass/_layout.scss */
   #mobile_image {
     background-image: url("../videos/tokyo_subway_900.png");
     height: 100%; }
 
-  /* line 45, ../components/sass/_layout.scss */
+  /* line 53, ../components/sass/_layout.scss */
+  .overlay {
+    left: 33%;
+    width: 300px;
+    height: 300px; }
+
+  /* line 58, ../components/sass/_layout.scss */
+  .overlay p {
+    margin: 0 auto 10px auto; }
+
+  /* line 61, ../components/sass/_layout.scss */
   span.dash-bottom {
     height: 640px; }
 
-  /* line 48, ../components/sass/_layout.scss */
+  /* line 64, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 10% 65px 10%;
     font-size: 1em;
     height: 335px; }
 
-  /* line 53, ../components/sass/_layout.scss */
+  /* line 69, ../components/sass/_layout.scss */
   #expo article {
     width: 650px; }
 
-  /* line 56, ../components/sass/_layout.scss */
+  /* line 72, ../components/sass/_layout.scss */
   #poem {
     height: 680px;
     background-image: url("../images/subway_645x680.jpg");
     height: 100%; }
 
-  /* line 61, ../components/sass/_layout.scss */
+  /* line 77, ../components/sass/_layout.scss */
   #poem div {
     font-size: 65%;
     line-height: 130%; } }
 @media screen and (min-width: 648px) and (max-width: 768px) {
-  /* line 70, ../components/sass/_layout.scss */
+  /* line 86, ../components/sass/_layout.scss */
   #mobile_image {
     background-image: url("../videos/tokyo_subway_900.png");
     height: 100%; }
 
-  /* line 74, ../components/sass/_layout.scss */
-  span.dash-bottom {
-    height: 610px; }
+  /* line 90, ../components/sass/_layout.scss */
+  .overlay {
+    left: 33%;
+    width: 300px;
+    height: 300px; }
 
-  /* line 77, ../components/sass/_layout.scss */
+  /* line 95, ../components/sass/_layout.scss */
+  .overlay p {
+    margin: 0 auto 10px auto; }
+
+  /* line 98, ../components/sass/_layout.scss */
+  span.dash-bottom {
+    height: 640px; }
+
+  /* line 101, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 10% 65px 10%;
     height: 335px; }
 
-  /* line 81, ../components/sass/_layout.scss */
+  /* line 105, ../components/sass/_layout.scss */
   #poem {
     height: 680px;
     background-image: url("../images/subway_1280x680.jpg"); }
 
-  /* line 85, ../components/sass/_layout.scss */
+  /* line 109, ../components/sass/_layout.scss */
   #poem div {
     font-size: 65%;
     line-height: 130%; } }
 @media screen and (min-width: 769px) and (max-width: 970px) {
-  /* line 94, ../components/sass/_layout.scss */
+  /* line 118, ../components/sass/_layout.scss */
   span.dash-bottom {
-    height: 610px; }
+    height: 620px; }
 
-  /* line 97, ../components/sass/_layout.scss */
+  /* line 121, ../components/sass/_layout.scss */
+  .overlay {
+    left: 33%;
+    width: 300px;
+    height: 300px; }
+
+  /* line 126, ../components/sass/_layout.scss */
+  .overlay p {
+    margin: 0 auto 10px auto; }
+
+  /* line 129, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 10% 65px 10%;
     height: 335px; }
 
-  /* line 102, ../components/sass/_layout.scss */
+  /* line 134, ../components/sass/_layout.scss */
   #poem {
     height: 680px;
     background-image: url("../images/subway_970x680.jpg"); }
 
-  /* line 106, ../components/sass/_layout.scss */
+  /* line 138, ../components/sass/_layout.scss */
   #poem div {
     font-size: 80%; } }
 @media screen and (min-width: 971px) and (max-width: 1280px) {
-  /* line 115, ../components/sass/_layout.scss */
+  /* line 147, ../components/sass/_layout.scss */
   span.dash-bottom {
-    height: 610px; }
+    height: 620px; }
 
-  /* line 118, ../components/sass/_layout.scss */
+  /* line 150, ../components/sass/_layout.scss */
+  .overlay {
+    left: 33%;
+    width: 300px;
+    height: 300px; }
+
+  /* line 155, ../components/sass/_layout.scss */
+  .overlay p {
+    margin: 0 auto 10px auto; }
+
+  /* line 158, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 25% 65px 25%;
     height: 330px; }
 
-  /* line 122, ../components/sass/_layout.scss */
+  /* line 162, ../components/sass/_layout.scss */
   #poem {
     height: 680px;
     background-image: url("../images/subway_1280x680.jpg"); }
 
-  /* line 126, ../components/sass/_layout.scss */
+  /* line 166, ../components/sass/_layout.scss */
   #poem div {
     font-size: 100%; } }
 @media screen and (min-width: 1281px) {
-  /* line 135, ../components/sass/_layout.scss */
+  /* line 175, ../components/sass/_layout.scss */
   span.dash-bottom {
-    height: 610px; }
+    height: 620px; }
 
-  /* line 138, ../components/sass/_layout.scss */
+  /* line 178, ../components/sass/_layout.scss */
+  .overlay {
+    left: 33%;
+    width: 300px;
+    height: 300px; }
+
+  /* line 183, ../components/sass/_layout.scss */
+  .overlay p {
+    margin: 0 auto 10px auto; }
+
+  /* line 186, ../components/sass/_layout.scss */
   #expo {
     padding: 40px 25% 65px 25%;
     height: 295px; }
 
-  /* line 142, ../components/sass/_layout.scss */
+  /* line 190, ../components/sass/_layout.scss */
   #poem {
     height: 680px;
     background-image: url("../images/subway_1680x680.jpg"); }
 
-  /* line 146, ../components/sass/_layout.scss */
+  /* line 194, ../components/sass/_layout.scss */
   #poem div {
     font-size: 100%; } }
-/* line 152, ../components/sass/_layout.scss */
+/* line 200, ../components/sass/_layout.scss */
 header {
   background-color: rgba(0, 0, 0, 0.3);
   width: auto;
@@ -265,13 +325,13 @@ header {
   padding: 10px;
   color: #FFF; }
 
-/* line 164, ../components/sass/_layout.scss */
+/* line 212, ../components/sass/_layout.scss */
 #intro {
   text-align: center;
   width: 100%;
   height: 900px; }
 
-/* line 170, ../components/sass/_layout.scss */
+/* line 218, ../components/sass/_layout.scss */
 video {
   position: fixed;
   right: 0;
@@ -284,29 +344,24 @@ video {
   background: url("../videos/tokyo_subway.png") no-repeat;
   background-size: cover; }
 
-/* line 183, ../components/sass/_layout.scss */
+/* line 231, ../components/sass/_layout.scss */
 .overlay {
-  width: 300px;
-  height: 300px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   background: rgba(0, 0, 0, 0.3);
   display: block;
   position: absolute;
-  top: 20%;
-  left: 33%; }
+  top: 20%; }
 
-/* line 196, ../components/sass/_layout.scss */
+/* line 241, ../components/sass/_layout.scss */
 .overlay p {
   text-align: center;
   width: 80%;
-  margin: 0 auto;
   color: #fff;
-  font-family: inherit;
-  margin-bottom: 10px; }
+  font-family: inherit; }
 
-/* line 205, ../components/sass/_layout.scss */
+/* line 248, ../components/sass/_layout.scss */
 span.dash-bottom {
   width: 4px;
   border-right: 4px dashed #fdfdfe;
@@ -316,18 +371,18 @@ span.dash-bottom {
   left: 50%;
   margin-left: -2px; }
 
-/* line 215, ../components/sass/_layout.scss */
+/* line 258, ../components/sass/_layout.scss */
 #expo {
   line-height: 150%;
   background-image: url("../images/gplaypattern.png");
   background-repeat: repeat;
   background-color: #FFF; }
 
-/* line 223, ../components/sass/_layout.scss */
+/* line 265, ../components/sass/_layout.scss */
 #expo p {
   padding-bottom: 1.25em; }
 
-/* line 227, ../components/sass/_layout.scss */
+/* line 269, ../components/sass/_layout.scss */
 .controls {
   background-color: #111177;
   width: auto;
@@ -335,11 +390,11 @@ span.dash-bottom {
   padding: 15px 0 0 0;
   color: #FFF; }
 
-/* line 235, ../components/sass/_layout.scss */
+/* line 277, ../components/sass/_layout.scss */
 #main {
   padding-left: 50px; }
 
-/* line 239, ../components/sass/_layout.scss */
+/* line 281, ../components/sass/_layout.scss */
 .hero #subway {
   width: 100%;
   background-repeat: no-repeat; }

@@ -7,6 +7,14 @@ and (max-width: $break_tiny) {
     background-image: url("../videos/tokyo_subway_900.png");
     height: 100%;
   }
+  .overlay {
+    left: 14%;
+    width: 250px;
+    height: 250px;
+  }
+  .overlay p {
+    margin: 0 auto 10px 17px;
+  }
   span.dash-bottom {
       height: 640px;
    }
@@ -42,6 +50,14 @@ and (max-width: $break_small) {
     background-image: url("../videos/tokyo_subway_900.png");
     height: 100%;
   }
+  .overlay {
+  left: 33%;
+  width: 300px;
+  height: 300px;
+  }
+  .overlay p {
+     margin: 0 auto 10px auto;
+  }
   span.dash-bottom {
       height: 640px;
    }
@@ -71,9 +87,17 @@ and (max-width: $break_medium) {
     background-image: url("../videos/tokyo_subway_900.png");
     height: 100%;
   }
+  .overlay {
+    left: 33%;
+    width: 300px;
+    height: 300px;
+  }
+  .overlay p {
+     margin: 0 auto 10px auto;
+  }
   span.dash-bottom {
-      height: 610px;
-   }
+      height: 640px;
+  }
    #expo {
     padding: 40px 10% 65px 10%;
     height: 335px;
@@ -92,8 +116,16 @@ and (max-width: $break_medium) {
 and (min-width: $break_medium +1)
 and (max-width: $break_large) {
   span.dash-bottom {
-      height: 610px;
+      height: 620px;
    }
+   .overlay {
+      left: 33%;
+      width: 300px;
+      height: 300px;
+    }
+   .overlay p {
+     margin: 0 auto 10px auto;
+    }
   #expo {
     padding: 40px 10% 65px 10%;
     height: 335px;
@@ -113,8 +145,16 @@ and (max-width: $break_large) {
 and (min-width: $break_large +1)
 and (max-width: $break_giant) {
   span.dash-bottom {
-      height: 610px;
+      height: 620px;
    }
+   .overlay {
+      left: 33%;
+      width: 300px;
+      height: 300px;
+    }
+   .overlay p {
+     margin: 0 auto 10px auto;
+  }
   #expo {
     padding: 40px 25% 65px 25%;
     height: 330px;
@@ -133,8 +173,16 @@ and (max-width: $break_giant) {
 and (min-width: $break_giant +1)
 {
   span.dash-bottom {
-      height: 610px;
+      height: 620px;
    }
+  .overlay {
+    left: 33%;
+    width: 300px;
+    height: 300px;
+  }
+  .overlay p {
+     margin: 0 auto 10px auto;
+  }
   #expo {
     padding: 40px 25% 65px 25%;
     height: 295px;
@@ -181,8 +229,6 @@ video {
 }
 
 .overlay {
-  width: 300px;
-  height: 300px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -190,16 +236,13 @@ video {
   display: block;
   position: absolute;
   top: 20%;
-  left: 33%;
 }
 
 .overlay p {
   text-align: center;
   width: 80%;
-  margin: 0 auto;
   color: #fff;
   font-family: inherit;
-  margin-bottom: 10px;
 }
 
 span.dash-bottom {
@@ -215,7 +258,6 @@ span.dash-bottom {
 #expo {
   line-height: 150%;
   background-image: url("../images/gplaypattern.png");
-  // background-image: url("../images/white_carbonfiber.png");
   background-repeat: repeat;
   background-color: #FFF;
 }
