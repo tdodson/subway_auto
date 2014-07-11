@@ -214,7 +214,10 @@ span.dash-bottom {
 
 #expo {
   line-height: 150%;
-  background: $green;
+  background-image: url("../images/gplaypattern.png");
+  // background-image: url("../images/white_carbonfiber.png");
+  background-repeat: repeat;
+  background-color: #FFF;
 }
 
 #expo p {

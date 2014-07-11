@@ -319,13 +319,15 @@ span.dash-bottom {
 /* line 215, ../components/sass/_layout.scss */
 #expo {
   line-height: 150%;
-  background: #bdce64; }
+  background-image: url("../images/gplaypattern.png");
+  background-repeat: repeat;
+  background-color: #FFF; }
 
-/* line 220, ../components/sass/_layout.scss */
+/* line 223, ../components/sass/_layout.scss */
 #expo p {
   padding-bottom: 1.25em; }
 
-/* line 224, ../components/sass/_layout.scss */
+/* line 227, ../components/sass/_layout.scss */
 .controls {
   background-color: #111177;
   width: auto;
@@ -333,11 +335,11 @@ span.dash-bottom {
   padding: 15px 0 0 0;
   color: #FFF; }
 
-/* line 232, ../components/sass/_layout.scss */
+/* line 235, ../components/sass/_layout.scss */
 #main {
   padding-left: 50px; }
 
-/* line 236, ../components/sass/_layout.scss */
+/* line 239, ../components/sass/_layout.scss */
 .hero #subway {
   width: 100%;
   background-repeat: no-repeat; }
