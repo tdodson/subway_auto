@@ -34,11 +34,11 @@ $(document).ready(function() {
 	}); // end preventDefault function
 	
 	$('a.people').on('click', function() {
-		$('section#people').toggle();
+		$('section#people').dialog();
 	}); // end a.people function
 	
 	$('a.code').on('click', function() {
-		$('section#code').toggle();
+		$('section#code').dialog();
 	}); // end a.code function
 
 }); // end document.ready
