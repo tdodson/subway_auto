@@ -104,13 +104,13 @@ a:link {
   color: #FFF; }
 /* line 52, ../components/sass/_base.scss */
 a:hover, a:active {
-  text-decoration: underline; }
+  border-bottom: 1px dotted #FFF; }
 /* line 55, ../components/sass/_base.scss */
 a:focus {
   outline: none; }
 /* line 58, ../components/sass/_base.scss */
 a:visited {
-  color: white; }
+  color: #FFF; }
 
 @media screen and (max-width: 630px) {
   /* line 6, ../components/sass/_layout.scss */
@@ -395,6 +395,5 @@ span.dash-bottom {
   padding-left: 50px; }
 
 /* line 281, ../components/sass/_layout.scss */
-.hero #subway {
-  width: 100%;
-  background-repeat: no-repeat; }
+section#people, section#code {
+  display: none; }

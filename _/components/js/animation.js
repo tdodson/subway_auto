@@ -25,4 +25,7 @@ $(document).ready(function() {
 			} // end if statement
 		}); // end anonymous window.on function
 	}); // end scroll triggers action function
+	$("a.no_default").click(function(event) {
+			event.preventDefault(); // prevents links of class "no_default" from behaving like links so that they may be used as even triggers for other actions (e.g., language change)
+	}); // end preventDefault function
 }); // end document.ready
