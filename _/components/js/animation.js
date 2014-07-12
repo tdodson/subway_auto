@@ -16,9 +16,9 @@ $(document).ready(function() {
 	
 	$(function() {
 			if ($window.width() < 631) { // up to breakpoint where #poem is still 900px height
-				endZone = $('footer').offset().top - $window.height() - 355; // calculate the height of the end zone.
+				endZone = $('#poem').offset().top - $window.height() + 25; // calculate the height of the end zone.
 			} else {
-				endZone = $('footer').offset().top - $window.height() - 10; // calculate the height of the end zone.
+				endZone = $('#poem').offset().top - $window.height() + 500; // calculate the height of the end zone.
 			} // end if/else statement
 		$window.on('scroll', function() { // everytime user scrolls, trigger this anonymous function
 			if ( (endZone) < $window.scrollTop() ) { 
