@@ -112,12 +112,34 @@ a:focus {
 a:visited {
   color: #FFF; }
 
-/* line 66, ../components/sass/_base.scss */
-.ui-dialog-content p {
-  font-size: 0.85em;
+/* line 65, ../components/sass/_base.scss */
+div.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {
   font-family: "Collator", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-spacing: 150% !important;
-  padding-bottom: 1.25em; }
+  background-image: url("../images/gplaypattern.png"); }
+
+/* line 70, ../components/sass/_base.scss */
+#people, #code {
+  background-color: #FFF; }
+
+/* line 74, ../components/sass/_base.scss */
+.ui-dialog-content p {
+  font-size: 0.75em;
+  font-family: "Collator", "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 150%;
+  padding: 0.65em 0; }
+
+/* line 82, ../components/sass/_base.scss */
+.ui-dialog-content a:link {
+  color: #111177; }
+/* line 85, ../components/sass/_base.scss */
+.ui-dialog-content a:hover, .ui-dialog-content a:active {
+  border-bottom: 1px dotted #111177; }
+/* line 88, ../components/sass/_base.scss */
+.ui-dialog-content a:focus {
+  outline: none; }
+/* line 91, ../components/sass/_base.scss */
+.ui-dialog-content a:visited {
+  color: #111177; }
 
 @media screen and (max-width: 630px) {
   /* line 6, ../components/sass/_layout.scss */

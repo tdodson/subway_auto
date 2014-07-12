@@ -36,7 +36,7 @@ $(document).ready(function() {
 	$('a.people').on('click', function() {
 		$('section#people').dialog({
 			title: "People",
-			height: 450,
+			height: 460,
 			width: 320,
 			show: {effect: "fadeIn", duration: 2000},
       hide: "fade"

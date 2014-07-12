@@ -60,13 +60,36 @@ a {
 	}
 }
 
-.ui-dialog-titlebar {
+
+
+div.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix.ui-draggable-handle {
+	font-family: $font-sans;
+	background-image: url("../images/gplaypattern.png");
+}
+
+#people, #code {
+	background-color: #FFF; 
 }
 
 .ui-dialog-content p {
-	font-size: 0.85em;
+	font-size: 0.75em;
 	font-family: $font-sans;
-	line-spacing: 150% !important;
-	padding-bottom: 1.25em;
+	line-height: 150%;
+	padding: 0.65em 0;
 }
 
+.ui-dialog-content a {
+	&:link {
+		color: $blue;
+	}
+	&:hover, &:active {
+		border-bottom: 1px dotted $blue;
+	}
+	&:focus {
+		outline: none;
+	}
+	&:visited {
+		color: $blue;
+	}
+
+}
