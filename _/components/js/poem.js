@@ -10,7 +10,7 @@ $('#ja').on('click', function() {
 });
 
 // Original Javascript function for language switching; replaced with JQuery.
-/* 
+/*
 function toggleEnglish() {
 	language = "English"; // no 'var'; variable must be global in scope
 }
@@ -44,12 +44,12 @@ var order_en = ["restrain yourself", "answer", "forgive us", "contact us", "acce
 // Function 'rand_range' generates a random number between 0 and the length of a given array. The Math.random function returns a number with its maximum value set by (max+1). The max parameter as applied in this script ends up being = (length of the door, verb, or order array) -2. The +1 is then added to the length. [e.g., slot (12-2 = 10) is given as the a param to rand_range, which transforms it to a value between 0.001 * 10, say, or 0.999 * 10. One is added to the max = 11. The result will be no larger than ~11.999999, which Math.floor drops to 11. The largest number returned will be 11.). Also avoids a case in which an array with only one item. Math.floor then rounds down the number to the nearest integer, essentially throwing away any decimal values. May not be truly 'random' but will generate a number within the desired range.
 
 function rand_range(max) {
- return Math.floor(Math.random()*(max+1));  
-} 
+ return Math.floor(Math.random()*(max+1));
+}
 
-// Function 'fresh' populates its parameter "array" with one of the other arrays( e.g., fresh(verb) ). It then applies rand_rage to that array, with it's length -2 as the max (see above). The random number returned by rand_range, will be, at most, array.length -1. Thus, +1 is added (a 0 results in -1, which is brought back up to 0 by the +1). Thus, the value of index = a number between 0 and array.length. 'Selection' is then set to the string corresponding to the slot in the array specified by the number (i.e., var index), array[index]. This string, array[index], is placed in an array at position 0. This is then converted to the variable "selection," which is retruned by the function. 
+// Function 'fresh' populates its parameter "array" with one of the other arrays( e.g., fresh(verb) ). It then applies rand_rage to that array, with it's length -2 as the max (see above). The random number returned by rand_range, will be, at most, array.length -1. Thus, +1 is added (a 0 results in -1, which is brought back up to 0 by the +1). Thus, the value of index = a number between 0 and array.length. 'Selection' is then set to the string corresponding to the slot in the array specified by the number (i.e., var index), array[index]. This string, array[index], is placed in an array at position 0. This is then converted to the variable "selection," which is retruned by the function.
 
-function fresh(array) { 
+function fresh(array) {
  var index = rand_range(array.length - 2) + 1, selection = array[index];
  array[index] = array[0];
  array[0] = selection;
@@ -65,7 +65,7 @@ function story() {
 	}
  // Places the text into 'last', the div just created. Then adds the new div after the 'main' div. Note: the new div does not have an id.
 
- // If "i" is less than or equal to twelve, increment it. If it is 13 or greater, stop incrementing and remove the first child of 'main.'	
+ // If "i" is less than or equal to twelve, increment it. If it is 13 or greater, stop incrementing and remove the first child of 'main.'
  var main = document.getElementById('main');
  if (i <= 9) {
   i += 1;
@@ -82,24 +82,26 @@ function story() {
 
 // Voice Code
 // Voices: http://stackoverflow.com/questions/17224540/web-speech-api-speech-synthesis-getting-voice-list
-
-	if ('speechSynthesis' in window) { // Checks to see if browser can run speech synthesis
-		var msg = new SpeechSynthesisUtterance();
-		msg.text = ut;
-		var voices = window.speechSynthesis.getVoices();
-		if (language == "English") {
-			msg.voiceURI = "Google UK English Female";	
-			msg.voice = voices.filter(function(voice) { return voice.name == "Google UK English Female"; })[0];
-			// msg.lang = "en_US";
-		} else {
-			msg.voiceURI = "Google 日本人";
-			msg.voice = voices.filter(function(voice) { return voice.name == "Google 日本人"; })[0];
-		}
-		msg.volume = 1; // 0 to 1
-		msg.rate = 1; // 0.1 to 10
-		msg.pitch = 1; //0 to 2
-		speechSynthesis.speak(msg);
-	} // End if speechSynthesis	
+  try {
+	  if ('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window) { // Checks to see if browser can run speech synthesis
+		  var msg = new SpeechSynthesisUtterance();
+		  msg.text = ut;
+		  var voices = window.speechSynthesis.getVoices();
+		  if (language == "English") {
+			  msg.voiceURI = "Google UK English Female";
+			  msg.voice = voices.filter(function(voice) { return voice.name == "Google UK English Female"; })[0];
+			  // msg.lang = "en_US";
+		  } else {
+			  msg.voiceURI = "Google 日本人";
+			  msg.voice = voices.filter(function(voice) { return voice.name == "Google 日本人"; })[0];
+		  }
+		  msg.volume = 1; // 0 to 1
+		  msg.rate = 1; // 0.1 to 10
+		  msg.pitch = 1; //0 to 2
+		  speechSynthesis.speak(msg);
+	  } // End if speechSynthesis
+  }// End try
+  catch (err) {}; // Discard errors, speech synth is optional
 } // end story
 
 // Calls the story() function every 8 seconds.
