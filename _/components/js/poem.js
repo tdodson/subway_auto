@@ -88,12 +88,13 @@ function story() {
 		  msg.text = ut;
 		  var voices = window.speechSynthesis.getVoices();
 		  if (language == "English") {
-			  msg.voiceURI = "Google UK English Female";
-			  msg.voice = voices.filter(function(voice) { return voice.name == "Google UK English Female"; })[0];
+			  /* msg.voiceURI = "Google UK English Female"; */
+			  msg.voiceURI = "Daniel";
+			  msg.voice = voices.filter(function(voice) { return voice.name == "Daniel"; })[0];
 			  // msg.lang = "en_US";
 		  } else {
-			  msg.voiceURI = "Google 日本人";
-			  msg.voice = voices.filter(function(voice) { return voice.name == "Google 日本人"; })[0];
+			  msg.voiceURI = "Kyoko";
+			  msg.voice = voices.filter(function(voice) { return voice.name == "Kyoko"; })[0];
 		  }
 		  msg.volume = 1; // 0 to 1
 		  msg.rate = 1; // 0.1 to 10
