@@ -85,31 +85,32 @@ function story() {
     // Voices: http://stackoverflow.com/questions/17224540/web-speech-api-speech-synthesis-getting-voice-list && https://output.jsbin.com/vayiti/latest
     try {
         if ('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window) { // Checks to see if browser can run speech synthesis
-
-
-
             var msg = new SpeechSynthesisUtterance();
+            var possibleVoices;
             msg.text = ut;
             /* loadVoices(); */
             /* var voices = window.speechSynthesis.getVoices(); */
-
             if (language == "English") {
-                msg.voiceURI = "Daniel";
-                msg.voice = voices.filter(function(voice) {
-                    return voice.name == "Daniel"; })[0];
+                msg.voiceURI = "UK voice";
+                possibleVoices = voices.filter(function(voice) {
+                    return voice.lang == "en-GB"; });
                 // msg.lang = "en_US";
             } else {
-                msg.voiceURI = "Kyoko";
-                msg.voice = voices.filter(function(voice) {
-                    return voice.name == "Kyoko"; })[0];
+                msg.voiceURI = "JP voice";
+                possibleVoices = voices.filter(function(voice) {
+                    return voice.lang == "ja-JP"; });
             }
+            msg.voice = possibleVoices[rand_range(possibleVoices.length - 1)];
             msg.volume = 1; // 0 to 1
             msg.rate = 1; // 0.1 to 10
             msg.pitch = 1; //0 to 2
-            speechSynthesis.speak(msg);
+            // Only speak if the voice selected above actually exist.
+            if (msg.voice !== null) {
+              speechSynthesis.speak(msg);
+            }
         } // End if speechSynthesis
     } // End try
-    catch (err) {}; // Discard errors, speech synth is optional
+    catch (err) {} // Discard errors, speech synth is optional
 } // end story
 
 // Fix for Chrome since it loads voices asynchronously and will otherwise load default local "Alex" voice for first line if this is not set before produce_stories() is called.
