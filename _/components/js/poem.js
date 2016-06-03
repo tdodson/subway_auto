@@ -82,9 +82,6 @@ function story() {
     // Voices: http://stackoverflow.com/questions/17224540/web-speech-api-speech-synthesis-getting-voice-list && https://output.jsbin.com/vayiti/latest
     try {
         if ('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window) { // Checks to see if browser can run speech synthesis
-
-
-
             var msg = new SpeechSynthesisUtterance();
             msg.text = ut;
 
