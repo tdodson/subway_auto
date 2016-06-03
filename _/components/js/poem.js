@@ -85,24 +85,24 @@ function story() {
     // Voices: http://stackoverflow.com/questions/17224540/web-speech-api-speech-synthesis-getting-voice-list && https://output.jsbin.com/vayiti/latest
     try {
         if ('speechSynthesis' in window && 'SpeechSynthesisUtterance' in window) { // Checks to see if browser can run speech synthesis
-
-
-
             var msg = new SpeechSynthesisUtterance();
+            var possibleVoices;
             msg.text = ut;
             /* loadVoices(); */
             /* var voices = window.speechSynthesis.getVoices(); */
-
+            console.log(voices);
             if (language == "English") {
-                msg.voiceURI = "US voice";
-                msg.voice = voices.filter(function(voice) {
-                    return voice.lang == "en-US"; })[0];
+                msg.voiceURI = "UK voice";
+                possibleVoices = voices.filter(function(voice) {
+                    return voice.lang == "en-GB"; });
                 // msg.lang = "en_US";
             } else {
                 msg.voiceURI = "JP voice";
-                msg.voice = voices.filter(function(voice) {
-                    return voice.lang == "ja-JP"; })[0];
+                possibleVoices = voices.filter(function(voice) {
+                    return voice.lang == "ja-JP"; });
             }
+            console.log(possibleVoices)
+            msg.voice = possibleVoices[rand_range(possibleVoices.length - 1)];
             msg.volume = 1; // 0 to 1
             msg.rate = 1; // 0.1 to 10
             msg.pitch = 1; //0 to 2
@@ -119,7 +119,6 @@ function story() {
 window.speechSynthesis.onvoiceschanged = function(e) {
     voices = speechSynthesis.getVoices();
 };
-
 
 // Calls the story() function every 8 seconds.
 function produce_stories() {
