@@ -12,16 +12,13 @@ $('#ja').on('click', function() {
 // Original Javascript function for language switching; replaced with JQuery.
 /*
 function toggleEnglish() {
-	language = "English"; // no 'var'; variable must be global in scope
+    language = "English"; // no 'var'; variable must be global in scope
 }
-
 function toggleJapanese() {
-	language = "Japanese"; // no 'var'; variable must be global in scope
+    language = "Japanese"; // no 'var'; variable must be global in scope
 }
-
 var textEn = document.getElementById('en');
 var textJa = document.getElementById('ja');
-
 textEn.onclick = toggleEnglish;
 textJa.onclick = toggleJapanese; */
 
@@ -90,32 +87,34 @@ function story() {
 
             var msg = new SpeechSynthesisUtterance();
             msg.text = ut;
-            /* loadVoices(); */
-            /* var voices = window.speechSynthesis.getVoices(); */
 
             if (language == "English") {
-                msg.voiceURI = "Daniel";
+                msg.voiceURI = "GB voice";
                 msg.voice = voices.filter(function(voice) {
-                    return voice.name == "Daniel"; })[0];
+                    return voice.lang == "en-GB"; })[0];
                 // msg.lang = "en_US";
             } else {
-                msg.voiceURI = "Kyoko";
+                msg.voiceURI = "JP voice";
                 msg.voice = voices.filter(function(voice) {
-                    return voice.name == "Kyoko"; })[0];
+                    return voice.lang == "ja-JP"; })[0];
             }
             msg.volume = 1; // 0 to 1
             msg.rate = 1; // 0.1 to 10
             msg.pitch = 1; //0 to 2
-            speechSynthesis.speak(msg);
+            // Only speak if the voice selected above actually exist.
+            if (msg.voice !== null) {
+              speechSynthesis.speak(msg);
+            }
         } // End if speechSynthesis
     } // End try
-    catch (err) {}; // Discard errors, speech synth is optional
+    catch (err) {} // Discard errors, speech synth is optional
 } // end story
 
 // Fix for Chrome since it loads voices asynchronously and will otherwise load default local "Alex" voice for first line if this is not set before produce_stories() is called.
 window.speechSynthesis.onvoiceschanged = function(e) {
     voices = speechSynthesis.getVoices();
 };
+
 
 // Calls the story() function every 8 seconds.
 function produce_stories() {
