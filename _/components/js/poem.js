@@ -90,7 +90,6 @@ function story() {
             msg.text = ut;
             /* loadVoices(); */
             /* var voices = window.speechSynthesis.getVoices(); */
-            console.log(voices);
             if (language == "English") {
                 msg.voiceURI = "UK voice";
                 possibleVoices = voices.filter(function(voice) {
@@ -101,7 +100,6 @@ function story() {
                 possibleVoices = voices.filter(function(voice) {
                     return voice.lang == "ja-JP"; });
             }
-            console.log(possibleVoices)
             msg.voice = possibleVoices[rand_range(possibleVoices.length - 1)];
             msg.volume = 1; // 0 to 1
             msg.rate = 1; // 0.1 to 10
