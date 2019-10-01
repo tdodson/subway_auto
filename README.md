@@ -3,6 +3,8 @@ subway_auto
 
 subwayauto
 
+Live at: http://pdrjournal.org/arts/Andrew_Campana/automation.html
+
 Instructions for setting up prerequisites to use this workflow (from Terminal on a Mac):
 
 Setup Node.js
