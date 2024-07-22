@@ -4,15 +4,15 @@
 	<meta charset="UTF-8">
 	<title>自動化 | Automation</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="_/css/jquerytheme.css">
 	<link rel="stylesheet" href="_/css/style.css">
-	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
 </head>
 <body>
 <header><a href="http://pdrjournal.org">PDR</a></header>
 <section id="intro">
 	<video autoplay="" loop="" poster="_/videos/tokyo_subway.png" id="bgvid">
-		<!-- <source src="_/videos/tokyo_subway.webm" type="video/webm"> -->
 		<source src="_/videos/tokyo_subway.m4v" type="video/mp4">
+		<source src="_/videos/tokyo_subway.webm" type="video/webm">
 	</video>
 	<div class="overlay">
 		<article id="title">
@@ -69,18 +69,34 @@
 </footer>
 <section id="people">
 	<p>Text for "自動化 || Automation" was provided by <a href="http://harvard.academia.edu/AndrewCampana" target="_blank">Andrew Campana</a>, who also wrote the original code for randomly generating the statements. Campana's original script is a modified version of code authored by <a href="http://nickm.com/" target="_blank">Nick Montfort</a> for use in his generative poem "Lede."</p>
-	<p><a href="http://pdrjournal.org/staff" target="_blank">Thomas Dodson</a> wrote the code for speech synthesis, language switching, responisve page design, animations, and embedded video.</p>
-	<p>The looped video of the Tokyo subway at the beginning of the piece was taken from "Tokyo's subway (metro / underground), Japan," shot by <a href="https://www.youtube.com/user/vstefanu" target="_blank">Vic Stefano</a>.</p>
+	<p><a href="http://pdrjournal.org/staff" target="_blank">Thomas Dodson</a> wrote the code for speech synthesis, language switching, responisve page design, animations, and embedded video. A fix for the Firefox browser was provided by <a href="https://github.com/pobocks" target="_blank">David Mayo</a>.</p>
+	<p>The looped video of the Tokyo subway was shot by <a href="https://www.youtube.com/user/vstefanu" target="_blank">Vic Stefano</a>, and the subway station photo by <a href="http://commons.wikimedia.org/wiki/User:PekePON" target="_blank">PekePHON</a>.</p>
+	<p>Collator, the bilingual typeface used in the piece, was designed by  <a href="http://vincelo.com/" target="_blank">Vince Lo</a>.</p>
 </section>
 <section id="code">
-	<p>"自動化 || Automation" was built using HTML5, CSS3, and JQuery.</p> 
+	<p>"自動化 || Automation" was built by <a href="http://techneblog.com" target="_blank">Thomas Dodson</a> using HTML5, CSS3, and JQuery.</p> 
 	<p>Note that the full range of features may not be available in some browsers and on some devices. For the best experience, we recommend using the Chrome browser on a desktop or laptop.</p>
 	<p>The code for this project is open source and made freely available under the MIT License. Source code can be downloaded or cloned from the repository on <a href="https://github.com/tdodson/subway_auto" target="_blank">Github</a>.</p>
 	
 </section>
 </div>
-	<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.min.js" integrity="sha256-4JY5MVcEmAVSuS6q4h9mrwCm6KNx91f3awsSQgwu0qc=" crossorigin="anonymous"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="_/js/script.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-16527814-6', 'auto');
+  ga('send', 'pageview');
+</script>
+<script>
+	window.jQuery || document.write('<script src="_/js/jquery1.11.1.js"></script>')
+</script>
+<script>
+	window.jQuery.ui || document.write('<script src="_/js/jquery-ui.min.js"></script>')
+</script>
 </body>
 </html>
